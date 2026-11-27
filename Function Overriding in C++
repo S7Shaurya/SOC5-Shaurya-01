@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+class Person{
+    public:
+        void walk(){
+            cout<<"Person is walking"<<endl;
+        }
+};
+
+class Student: public Person{
+    public:
+        void walk(){
+            cout<<"Student is walking"<<endl;
+        }
+};
+
+int main(){
+    Person p;
+    Student s;
+    s.walk();
+    p.walk();
+    return 0;
+}
