@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+class Area{
+    public:
+        float area(float r){
+            return 3.14*r*r;
+        }
+        float area(float l, float b){
+            return l*b;
+        }
+};
+
+int main(){
+    Area a;
+    cout<<"Area of Circle: "<<a.area(5)<<endl;
+    cout<<"Area of Rectangle: "<<a.area(6,7)<<endl;
+    return 0;
+}
